@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style type="text/css">
+      .row {
+         width:700px;
+         margin:0px auto;
+      }
+      h3 {
+            text-align:center
+      }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="row">
+           <h3>상세보기</h3>
+           <table class="table">
+               <tr>
+                   <th class="text-right">이름</th>
+                   <td>{{object.name}}</td>
+               </tr>
+               <tr>
+                   <th class="text-right">성별</th>
+                   <td>{{object.sex}}</td>
+               </tr>
+               <tr>
+                   <th class="text-right">주소</th>
+                   <td>{{object.addr}}</td>
+               </tr>
+               <tr>
+                   <th class="text-right">전화</th>
+                   <td>{{object.tel}}</td>
+               </tr>
+               <tr>
+                   <td class="text-right" colspan="2">
+                       <a href="{% url 'list' %}" class="btn btn-sm btn-danger">목록</a>
+                   </td>
+               </tr>
+           </table>
+       </div>
+   </div>
+</body>
+</html>
